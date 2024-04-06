@@ -1,0 +1,13 @@
+@font-face {
+    font-family: "Drunk_proud";
+    src: url(../fonts/drunk_proud/Drunk\ &\ Proud.otf) format("opentype");
+}
+
+@font-face {
+    font-family: "hug_me_tight";
+    src: url(../fonts/hug_me_tight/Hug\ Me\ Tight\ -\ OTF.otf) format("opentype");
+}
+
+h1 {
+    font-family: "Drunk_proud";
+}
