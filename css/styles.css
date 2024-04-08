@@ -8,6 +8,24 @@
     src: url(../fonts/hug_me_tight/Hug\ Me\ Tight\ -\ OTF.otf) format("opentype");
 }
 
+:root {
+    --Anubis: #050609;
+    --Crazy_Diamonds: #210124;
+    --Six_Pistols: #8E443D;
+    --Magicians_Red: #931F1D;
+    --Echoes: #5C6F68;
+    --Silver_Chariot: #FFFAFF;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+header {
+    width: 100vw;
+    height: 100vh;
+}
+
 h1 {
     font-family: "Drunk_proud";
 }
