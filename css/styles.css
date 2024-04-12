@@ -17,15 +17,53 @@
     --Silver_Chariot: #FFFAFF;
 }
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
     overflow-x: hidden;
 }
 
 header {
+    position: relative;
     width: 100vw;
     height: 100vh;
+    background-image: url(../img/img_arriere_plan/arrière_plan_lune.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top right;
 }
 
-h1 {
+header h1 {
     font-family: "Drunk_proud";
+    letter-spacing: 5px;
+    margin: 10px;
+    text-align: center;
+}
+
+#start_credit {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    max-width: 850px;
+    font-size: 12px;
+    letter-spacing: 1px;
+    font-family: "hug_me_tight";
+}
+
+#call_to_action {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateY(-50%);
+    width: 10vw;
+    height: 5vh;
+    font-size: 30px;
+    letter-spacing: 1px;
+    font-family: "hug_me_tight";
+    text-align: center;
+    opacity: 0;
 }
