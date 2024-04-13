@@ -1,4 +1,4 @@
-# Projet scrollytelling: Ombre Blanche
+# Projet scrollytelling: Terreur Blanche
 
 ## Projet scolaire dans le cadre du cours:
 

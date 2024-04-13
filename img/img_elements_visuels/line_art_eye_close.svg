@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1890" height="1417" viewBox="0 0 1890 1417">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #000;
+        stroke-width: 5px;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="Forme_1" data-name="Forme 1" class="cls-1" d="M414,709c74.861,0.264,135.245,2.412,212,2,82.994-.446,124.585-6.684,201-12"/>
+  <path id="Forme_2" data-name="Forme 2" class="cls-1" d="M1049,708c114.38,14.471,161.61,18.032,259,25,78,5.581,138.4,6.4,218-4"/>
+  <path id="Forme_3" data-name="Forme 3" class="cls-1" d="M418,710c97.6,2.45,126.5,7.189,203,4,75.35-3.141,130.248-3.069,203-14"/>
+  <path id="Forme_4" data-name="Forme 4" class="cls-1" d="M1054,710c92.12,10.458,140.72,19.4,222,23,83.75,3.706,140.22,13.273,249-1"/>
+</svg>
