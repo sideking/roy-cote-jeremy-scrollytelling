@@ -1,0 +1,196 @@
+2-1a:
+
+
+Histoire - Terreur blanche (titre est dans le haut de la page)
+
+
+Chapitre - 1 - Un simple reve (titre est sur le lit(?))
+case - 1
+jade s'endort dans son lit
+*fade to black apres avoir voir jade endormi*
+
+case - 2
+l'histoire commence dans le ciel et descend jusqu'au sol.
+*descente jusqu'au sol où il y a une foret*
+
+
+
+
+
+
+Chapitre - 2 - La figure blanche (titre est dans le sol de la foret, il se deplace vers la gauche quand jade marche)
+
+case - 3
+jade se promene dans une foret sombre éclairé par la lune
+*jade marche vers la droite avec le scroll*
+
+case - 4
+jade voit une figure blanche au loin
+*la figure apparait par la droite au loin et la tete de jade se tourne*
+
+case - 5
+la tete de la figure se tourne vers jade et sourit
+*il y a un zoom vers la tete de la figure lorsque la tete tourne*
+
+case - 6
+la figure commence a se rapprocher de jade
+*il y a un scale avec le scroll la creature prend toute l'espace de la page (screens become white)*
+
+
+
+
+
+
+
+
+Chapitre - 3 - Un danger mortel (titre apparait dans le millieu du blanc)
+
+case - 7
+il y a un dezoom de la lune et on appercois jade et le monstre
+*le blanc se transforme en lune et on dezoom avec le scroll*
+
+case - 8
+jade s'enfuit vers la gauche, le monstre fait de même
+*le monstre et la fille vont vers la gauche, il y a du paralax avec les arbres*
+
+case - 9
+jade continue de courrir en étant poursuivie par le monstre
+*jade sort de l'écran par la gauche la camera rentre dans le sol avec le scroll*
+
+
+
+
+
+
+
+Chapitre - 4 - Sans echapatoire (le titre était en desous de la scene précedante)
+
+case - 10
+jade cours vers le bas  en zigzag et le monstre la suit
+*jade dessend avec le scroll et le monstre se déplace d'arbre en arbre derriere elle*
+
+case - 11
+jade faceplant comme une conne et se releve pour voir le monstre devant elle.
+*le monstre s'approche d'elle avec le scroll. *
+
+
+
+
+
+Chapitre - 5 - Fin abrusque (la page descend avec le monstre qui continu de s'avancer.)
+
+case - 12
+il y a un zoom sur la face de jade et une ombre qui s'aggrandit
+*l'ombre grossit avec le scroll*
+
+case - 13
+une main blanche s'approche du visage de jade et la touche puis disparait subitement
+*la main s'approche avec le scroll*
+
+case- 14 & 15
+zoom sur la main du monstre et une ligne se forme
+*zoom avec le scroll la ligne se forme aussi avec le scroll l'oeil se trace avec le scroll*
+
+
+
+
+Chapitre - 6 - Réveil brutal (le titre est là quand l'oeil est fermer)
+
+case - 16
+l'oeil se rouvre. le monstre est au dessu de jade et bave du sang
+*l'oeil se rouvre avec le scroll. la bave s'étire avec le scroll*
+
+case - 17
+la case 16 tourne 90 degré vers la gauche puis on voit que c'est la page de couverture d'un livre dont les pages se déconstruit.
+*dezoom et tourne avec le scroll. des pages tombes avec le scroll*
+
+
+animation idea :
+
+1. transition
+entre les chapitre:
+fade to black
+zoom out / zoom in
+glissement
+clignement
+
+2. parallax
+
+parallax foret
+ciel
+
+3. morphing
+
+bave du monstre
+
+4. non-lineaire
+
+déplacement en zig-zag
+
+5. texte animé
+
+titre et paragraphe 
+
+6. decompose ou compose
+
+livre terreur blanche
+
+7. ligne se forme
+
+forme d'oeil
+sang qui coule a la fin (bave)
+
+8. animation en continue
+
+nuage / ciel
+jade
+
+
+
+
+
+2-1b:
+
+
+
+1 - element graphique :
+
+* jade (3)
+* le monstre (3)
+* main (1)
+* l'ombre (1)
+* arbre (3)
+* le ciel (2)
+
+
+2 - arrière plan pour chaque chapitre :
+
+* 2.1 - Un simple reve : 
+* 2.2 - La figure blanche : 
+* 2.3 - Un danger mortel : 
+* 2.4 - Sans echapatoire : 
+* 2.5 - Fin abrusque : 
+* 2.6 - Réveil brutal : 
+
+
+3 - décor en plusieurs couche :
+
+* Forêt
+* Ciel
+
+4 - 2 forme simple pour morphing :
+
+* 4.1 : ligne de sang --> 4.2 : goutte de sang
+
+5 - element avec plusieurs couche pour la décomposer :
+
+* livre fin
+
+6 - ligne qui trace une forme :
+
+* L'oeil chapitre 6
+
+7 - sprite sheet :
+* jade
+* ciel
+

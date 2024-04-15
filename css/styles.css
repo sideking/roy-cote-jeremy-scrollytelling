@@ -1,5 +1,9 @@
+/*--------------------------------------------------------- 
+# Polices et Couleurs
+---------------------------------------------------------*/
+
 @font-face {
-    font-family: "Drunk_proud";
+    font-family: "Drunk_N_proud";
     src: url(../fonts/drunk_proud/Drunk\ &\ Proud.otf) format("opentype");
 }
 
@@ -16,6 +20,10 @@
     --Echoes: #5C6F68;
     --Silver_Chariot: #FFFAFF;
 }
+
+/*--------------------------------------------------------- 
+# Styles Généraux 
+---------------------------------------------------------*/
 
 * {
     box-sizing: border-box;
@@ -37,11 +45,21 @@ header {
     background-position: top right;
 }
 
+section {
+    width: 100vw;
+    height: 100vh;
+}
+
+/*---------------------------------------------------------- 
+# Intro
+----------------------------------------------------------*/ 
+
 header h1 {
-    font-family: "Drunk_proud";
+    font-family: "Drunk_N_proud";
     letter-spacing: 5px;
-    margin: 10px;
+    padding: 10px;
     text-align: center;
+    text-shadow: 1px 0px var(--Silver_Chariot), -1px 0px var(--Silver_Chariot), 0px 1px var(--Silver_Chariot), 0px -1px var(--Silver_Chariot);
 }
 
 #start_credit {
@@ -66,4 +84,59 @@ header h1 {
     font-family: "hug_me_tight";
     text-align: center;
     opacity: 0;
+}
+
+/*---------------------------------------------------------- 
+# Chapitre 1
+----------------------------------------------------------*/ 
+
+#Simple_reve {
+    background-image: url(../img/img_arriere_plan/maison_start.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*---------------------------------------------------------- 
+# Chapitre 2 et Chapitre 3
+----------------------------------------------------------*/ 
+
+#La_figure {
+    background-image: url(../img/img_arriere_plan/foret_drette.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+#Danger_mortel {
+
+}
+
+/*---------------------------------------------------------- 
+# Chapitre 4
+----------------------------------------------------------*/ 
+
+#Sans_echapatoire {
+    background-image: url(../img/img_arriere_plan/foret_curvy.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*---------------------------------------------------------- 
+# Chapitre 5
+----------------------------------------------------------*/ 
+
+#Fin_abrusque {
+    background-image: url(../img/img_arriere_plan/foret_parallele.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*---------------------------------------------------------- 
+# Chapitre 6
+----------------------------------------------------------*/ 
+
+#Reveil_brutal {
+    background-image: url(../img/img_arriere_plan/);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
