@@ -103,6 +103,7 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top right;
+    overflow: hidden;
 }
 
 section {
@@ -144,6 +145,22 @@ header h1 {
     text-align: center;
     opacity: 0;
     text-shadow: 2px 0px var(--Silver_Chariot), -2px 0px var(--Silver_Chariot), 0px 2px var(--Silver_Chariot), 0px -2px var(--Silver_Chariot);
+}
+
+#header_black {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+
+}
+
+#header_brown {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+
 }
 
 /*---------------------------------------------------------- 
