@@ -127,6 +127,15 @@ section {
     background-repeat: no-repeat;
 }
 
+.BG {
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.img {
+    border: red 1px solid;
+}
+
 /*---------------------------------------------------------- 
 # Intro
 ----------------------------------------------------------*/ 
@@ -169,8 +178,9 @@ header h1 {
 #arbres_noir {
     position: absolute;
     bottom: 0;
-    width: 3840px;
+    width: 100%;
     height: 100%;
+    background-size: 3840px 100vh;
     background-image: url(../img/img_arriere_plan/arbres_noir_loop.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -179,8 +189,9 @@ header h1 {
 #arbres_mauve {
     position: absolute;
     bottom: 0;
-    width: 3840px;
+    width: 100%;
     height: 100%;
+    background-size: 3840px 100vh;
     background-image: url(../img/img_arriere_plan/arbres_mauve_loop.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -191,8 +202,9 @@ header h1 {
     position: absolute;
     left: 0;
     bottom: 0;
-    width: 3840px;
+    width: 100%;
     height: 100%;
+    background-size: 3840px 100vh;
     background-image: url(../img/img_arriere_plan/arbres_brun_loop.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -203,8 +215,9 @@ header h1 {
 #arbres_rouge {
     position: absolute;
     bottom: 0;
-    width: 3840px;
+    width: 100%;
     height: 100%;
+    background-size: 3840px 100vh;
     background-image: url(../img/img_arriere_plan/arbres_rouge_loop.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -216,10 +229,8 @@ header h1 {
 
 #Simple_reve {
     background-image: url(../img/img_arriere_plan/maison_start.png);
-    background-repeat: no-repeat;
-    background-size: cover;
     background-position: top right;
-    position: relative;
+    overflow: hidden;
 }
 
 .cloud_holder {
@@ -261,9 +272,8 @@ header h1 {
 
 #La_figure {
     background-image: url(../img/img_arriere_plan/foret_drette.png);
-    background-repeat: no-repeat;
-    background-size: cover;
     background-position: center;
+    overflow: hidden;
 }
 
 #side {
@@ -288,55 +298,46 @@ header h1 {
 
 #monster_sitting {
     position: absolute;
+    top: 45%;
+    right: 0;
+    transform: translateY(-55%);
     width: 30%;
     aspect-ratio: 1/1;
     min-width: 300px;
     max-width: 500px;
-    background-image: url(../img/img_personnages/monstre_sit.png);
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
 }
 
 
-#monster_standing {
+.monster_standing {
     position: absolute;
+    top: 0%;
+    right: 0;
     width: 30%;
     aspect-ratio: 1/2;
     min-width: 300px;
     max-width: 400px;
-    background-image: url(../img/img_personnages/monstre_regarde.png);
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
 
 }
 
 #monster_face {
     position: absolute;
+    bottom: 0;
     width: 100%;
-    aspect-ratio: 1/1;
+    height: 100%;
     background-image: url(../img/img_personnages/monstre_visage.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
     opacity: 0;
-}
-
-#monster_chase {
-    position: absolute;
-    width: 30%;
-    aspect-ratio: 1/2;
-    min-width: 200px;
-    max-width: 400px;
-    background-image: url(../img/img_personnages/monstre_mini.png);
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
+    z-index: 1;
 }
 
 #background_purple {
+    position: absolute;
     width: 100%;
     height: 100%;
     background-image: url(../img/img_arriere_plan/BG_mauve.png);
-    background-size: 100% 100%;
     opacity: 0;
+    z-index: 0;
 }
 
 /*
@@ -350,28 +351,15 @@ header h1 {
 
 #Sans_echapatoire {
     background-image: url(../img/img_arriere_plan/foret_curvy.png);
-    background-repeat: no-repeat;
-    background-size: cover;
     background-position: left;
 }
 
-#down {
+.seek_girl.down {
     position: absolute;
     width: 30%;
     min-width: 300px;
     max-width: 400px;
     aspect-ratio: 1/1;
-}
-
-#monster_chase_down {
-    position: absolute;
-    width: 30%;
-    aspect-ratio: 1/2;
-    min-width: 200px;
-    max-width: 250px;
-    background-image: url(../img/img_personnages/monstre_mini.png);
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
 }
 
 #tree_holder {
@@ -410,9 +398,44 @@ header h1 {
 
 #Fin_abrusque {
     background-image: url(../img/img_arriere_plan/foret_parallele.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    background-position: center top;
+}
+
+.seek_girl.fall {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30%;
+    min-width: 300px;
+    max-width: 400px;
+    aspect-ratio: 1/1;
+}
+
+#jade_fell {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+    min-width: 200px;
+    max-width: 250px;
+    opacity: 1;
+}
+
+#scared_to_death {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/img_personnages/jade_scared_to_death.png);
+    background-position: center center;
+    opacity: 0;
+}
+
+#hand {
+    position: absolute;
+    bottom: 0;
+    left: 50vw;
+    transform: translateX(-50%);
+    opacity: 0;
 }
 
 /*---------------------------------------------------------- 
@@ -420,7 +443,49 @@ header h1 {
 ----------------------------------------------------------*/ 
 
 #Reveil_brutal {
-    background-image: url(../img/img_arriere_plan/);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-image: url(../img/img_arriere_plan/BG_blanc.png);
+    background-position: center;
+    overflow: hidden;
+}
+
+#bave {
+    position: absolute;
+    top: 0;
+    max-width: 50%;
+}
+
+#goutte {
+    position: absolute;
+    top: 0;
+    max-width: 50%;
+}
+
+#eye_close {
+    position: absolute;
+    max-width: 50%;
+    max-height: 50%;
+}
+
+#eye_open {
+    position: absolute;
+    top: 0;
+    max-width: 50%;
+    max-height: 50%;
+}
+
+#monstre_smile {
+    position: absolute;
+    max-width: 50%;
+}
+
+#livre {
+    position: absolute;
+    max-width: 50vw;
+    max-height: 100vh;
+}
+
+.page {
+    position: absolute;
+    max-width: 50vw;
+    max-height: 100vh;
 }
