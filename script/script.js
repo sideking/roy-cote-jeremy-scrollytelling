@@ -54,8 +54,8 @@ gsap.timeline({repeat: -1})
 .fromTo("#La_figure", {backgroundPosition: "100% 0"}, {backgroundPosition: "0% 0", ease: "none", duration: 10}, "<")
 .fromTo(".noir_ch2", {backgroundPosition: "90% 0", y: -100}, {backgroundPosition: "10% 0", ease: "none", duration: 10}, "<")
 .fromTo(".brun_ch2", {backgroundPosition: "100% 0", y: 100}, {backgroundPosition: "0% 0", ease: "none", duration: 10}, "<")
-.fromTo(".girl_ch2", {x: "100vw", opacity:1}, {x: "-100vw", ease: "none", duration: 10}, "<")
-.fromTo("#standing_ch2", {x: "150vw", opacity:1}, {x: "-100vw", ease: "steps(15)", duration: 8}, "<")
+.fromTo(".girl_ch2", {x: "100vw", opacity:1}, {opacity:1, x: "-100vw", ease: "none", duration: 10}, "<")
+.fromTo("#standing_ch2", {x: "150vw", opacity:1}, {opacity:1, x: "-100vw", ease: "steps(15)", duration: 8}, "<")
 
 
 
@@ -65,12 +65,24 @@ CHAPITRE 5
 
 gsap.timeline({repeat: -1})
 .fromTo(".girl_ch5", {scale:0}, {scale:1, duration:5, ease:"none"})
-.to(".girl_ch5", {y: "10vh", duration:5, ease:"none"}, "<")
+.to(".girl_ch5", {y: "20vh", duration:5, ease:"none"}, "<")
 .to(".girl_ch5", {opacity:0, duration:0.1, ease:"none"})
-.fromTo("#jade_fell", {y: "20vh", opacity:0, rotationZ:180}, {opacity:1, duration:0.1, y: "25vh", ease:"none", duration: 1},"<")
+.fromTo("#jade_fell", {y: "20vh", opacity:0, rotationZ:180}, {opacity:1, duration:0.1, y: "50vh", ease:"none", duration: 1},"<")
 .to("#jade_fell", {duration:3})
-
-
+.to(".monster_last", {duration:1, opacity:1})
+.to("#scared_to_death", {duration:1, opacity:1},"+=2")
+.to(".monster_last", {duration:1, y:"15vh"}, "<")
+.fromTo("#hand",{y:"10vh"}, {y:0, duration:1, opacity:1})
+.to("#scared_to_death", {x:"-1vw", duration:0.1})
+.to("#scared_to_death", {x:"1vw", duration:0.1})
+.to("#scared_to_death", {x:"-1vw", duration:0.1})
+.to("#scared_to_death", {x:"1vw", duration:0.1})
+.to("#scared_to_death", {x:"-1vw", duration:0.1})
+.to("#scared_to_death", {x:"1vw", duration:0.1})
+.to("#scared_to_death", {x:"-1vw", duration:0.1})
+.to("#scared_to_death", {x:"1vw", duration:0.1})
+.to("#scared_to_death", {x:"1vw", duration:0.1})
+.to(".white", {opacity:1, duration:1}, "-=1")
 
 
 });

@@ -1,4 +1,14 @@
 /*--------------------------------------------------------- 
+# test
+---------------------------------------------------------*/
+
+#is_spitesheath #cloudy_meadows,
+#is_spitesheath #cloudy_meadows {
+    height: 500px;
+    width: 500px;
+}
+
+/*--------------------------------------------------------- 
 # Polices et Couleurs
 ---------------------------------------------------------*/
 
@@ -110,6 +120,24 @@ section {
     border-top: 1px red solid;
 }
 
+footer {
+    text-align: left;
+}
+
+h1 {
+    position: absolute;
+    font-family: "Drunk_N_proud";
+    letter-spacing: 5px;
+    text-shadow: 2px 0px var(--Silver_Chariot), -2px 0px var(--Silver_Chariot), 0px 2px var(--Silver_Chariot), 0px -2px var(--Silver_Chariot);
+}
+
+main p {
+    position: absolute;
+    letter-spacing: 1px;
+    font-family: "hug_me_tight";
+    text-shadow: 1px 0px var(--Silver_Chariot), -1px 0px var(--Silver_Chariot), 0px 1px var(--Silver_Chariot), 0px -1px var(--Silver_Chariot);
+}
+
 .black {
     width: 100%;
     height: 500px;
@@ -141,14 +169,10 @@ section {
 ----------------------------------------------------------*/ 
 
 header h1 {
-    position: absolute;
     left: 0;
     right: 0;
-    font-family: "Drunk_N_proud";
-    letter-spacing: 5px;
     padding: 10px;
     text-align: center;
-    text-shadow: 2px 0px var(--Silver_Chariot), -2px 0px var(--Silver_Chariot), 0px 2px var(--Silver_Chariot), 0px -2px var(--Silver_Chariot);
 }
 
 #start_credit {
@@ -308,7 +332,7 @@ header h1 {
 }
 
 
-.monster_standing {
+.monster_standing.side {
     position: absolute;
     top: 0%;
     right: 0;
@@ -340,18 +364,14 @@ header h1 {
     z-index: 0;
 }
 
-/*
-#Danger_mortel {
-
-}
-
 /*---------------------------------------------------------- 
 # Chapitre 4
 ----------------------------------------------------------*/ 
 
 #Sans_echapatoire {
-    background-image: url(../img/img_arriere_plan/foret_curvy.png);
-    background-position: left;
+    background-image: url(../img/img_arriere_plan/foret_curvy_corrupt.png);
+    background-position: left top;
+    overflow: hidden;
 }
 
 .seek_girl.down {
@@ -362,34 +382,15 @@ header h1 {
     aspect-ratio: 1/1;
 }
 
-#tree_holder {
-    position: relative;
-    width: 100%;
-    height: 100%;
-}
-
-.scary_brown {
+.monster_standing.down {
     position: absolute;
-    left: 600px;
-    top: 150px;
-}
+    top: 0%;
+    left: 0;
+    width: 20%;
+    aspect-ratio: 1/2;
+    min-width: 200px;
+    max-width: 300px;
 
-.corrupted_brown {
-    position: absolute;
-    left: 600px;
-    top: 150px;
-}
-
-.scary_black {
-    position: absolute;
-    left: 900px;
-    top: 500px;
-}
-
-.corrupted_black {
-    position: absolute;
-    left: 900px;
-    top: 500px;
 }
 
 /*---------------------------------------------------------- 
@@ -399,6 +400,7 @@ header h1 {
 #Fin_abrusque {
     background-image: url(../img/img_arriere_plan/foret_parallele.png);
     background-position: center top;
+    overflow: hidden;
 }
 
 .seek_girl.fall {
@@ -421,6 +423,14 @@ header h1 {
     opacity: 1;
 }
 
+.monster_chase.fall {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%) scale(0.8);
+    opacity: 0;
+}
+
 #scared_to_death {
     position: absolute;
     width: 100%;
@@ -428,6 +438,7 @@ header h1 {
     background-image: url(../img/img_personnages/jade_scared_to_death.png);
     background-position: center center;
     opacity: 0;
+    z-index: 3;
 }
 
 #hand {
@@ -435,7 +446,19 @@ header h1 {
     bottom: 0;
     left: 50vw;
     transform: translateX(-50%);
+    opacity: 3;
     opacity: 0;
+    z-index: 3;
+}
+
+.white {
+    position: absolute;
+    top: 0;
+    background-image: url(../img/img_arriere_plan/BG_blanc.png);
+    width: 100vw;
+    height: 100vh;
+    opacity: 0;
+    z-index: 4;
 }
 
 /*---------------------------------------------------------- 
