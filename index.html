@@ -10,16 +10,20 @@
 <body>
     <!-- ---------- Début Écran d'introduction -------- -->
     <header>
-        <div id="arbres_noir"></div>
-        <div id="arbres_mauve"></div>
-        <div id="arbres_brun"></div>
-        <div id="arbres_rouge"></div>
-        <h1>Terreur Blanche</h1>
+        <div class="animated" id="arbres_noir"></div>
+        <div class="animated" id="arbres_mauve"></div>
+        <div class="animated" id="arbres_brun"></div>
+        <div class="animated" id="arbres_rouge"></div>
+        <h1 class="animated">Terreur Blanche</h1>
         <p id="start_credit">
             Projet scrollytelling créé dans le cadre du cours Optimisation Web - Intégration multimédia - Collège Montmorency. <br>
             © 2024 -  Conception : Jérémy Roy-Côté et Keven Malric | Développement Web : Jérémy Roy-Côté.
         </p>
-        <p id="call_to_action">Défiler</p>
+        <div id="call_to_action">
+            <img src="./img/img_elements_visuels/fleche.png" alt="">
+            <p>Défiler</p>
+        </div>
+        
     </header>
     <!-- ---------- Fin Écran d'introduction ---------- -->
     <main>
@@ -35,16 +39,16 @@
                     </ul> 
                 </li> 
             </ul>
-            <h1 id="T_1">Un Simple Rêve</h1>
-            <p class="ch1_1">Une petite fille nommée Jade s'endort lors d'une nuit paisible.</p>
-            <p class="ch1_2">Son sommeil l'emporta vers un monde magique.</p>
-            <p class="ch1_3">Une forêt enchanté dans lequel elle pourra jouer toute la nuit.</p>
-            <div class="cloud_holder">
-                <div  class="auto cloud_1 cloudy_meadows img"></div>
-                <div  class="auto cloud_2 cloudy_meadows img"></div>
+            <h1 class="animated" id="T_1">Chapitre 1: Un Simple Rêve</h1>
+            <p class="ch1_1 animated">Une petite fille nommée Jade s'endort lors d'une nuit paisible.</p>
+            <p class="ch1_2 animated">Son sommeil l'emporta vers un monde magique.</p>
+            <p class="ch1_3 animated">Une forêt enchanté dans lequel elle pourra jouer toute la nuit.</p>
+            <div class="cloud_holder animated">
+                <div  class="auto cloud_1 cloudy_meadows animated"></div>
+                <div  class="auto cloud_2 cloudy_meadows animated"></div>
             </div>
-            <div class="black noir_ch1 img"></div>
-            <div class="brown brun_ch1 img"></div>
+            <div class="black noir_ch1 animated"></div>
+            <div class="brown brun_ch1 animated"></div>
         </section>
     <!-- ---------- Fin Chapitre 1 -------------------- -->
     <!-- ---------- Début Chapitre 2 et Chapitre 3 ------------------ -->
@@ -59,20 +63,20 @@
                     </ul> 
                 </li> 
             </ul>
-            <h1 id="T_2">La Figure</h1>
-            <h1 id="T_3">Un Danger Mortel</h1>
-            <p class="ch2_1">Elle se promenait en forêt suivant un sentier de terre, les arbres avait l'air glisser dans le sol.</p>
-            <p class="ch2_2">Une forme noire se trouvais au bout du sentier. Assise et recroqueviller sur elle même.</p>
-            <p class="ch2_3">La figure se déplia et regarda Jade intensément.</p>
-            <p class="ch3_1">Jade s'enfuit de l'autre l'autre côté, mais le monstre la poursuivait.</p>
-            <p class="ch3_2">Ce monstre se téléportait en la suivant.</p>
-            <div class="black noir_ch2 img"></div>
-            <div class="brown brun_ch2 img"></div>
-            <div id="side" class="seek_girl girl_ch2 img"></div>
-            <img src="./img/img_personnages/monstre_sit.png" id="monster_sitting" class="img" alt="">
-            <img src="./img/img_personnages/monstre_regarde.png" id="standing_ch2" class="monster_standing side img" alt="monstre debout">
-            <div id="monster_face"></div>
-            <div id="background_purple" class="BG"></div>
+            <h1 class="animated" id="T_2">La Figure</h1>
+            <h1 class="animated" id="T_3">Un Danger Mortel</h1>
+            <p class="ch2_1 animated">Elle se promenait en forêt suivant un sentier de terre, les arbres avait l'air glisser dans le sol.</p>
+            <p class="ch2_2 animated">Une forme noire se trouvais au bout du sentier. Assise et recroqueviller sur elle même.</p>
+            <p class="ch2_3 animated">La figure se déplia et regarda Jade intensément.</p>
+            <p class="ch3_1 animated">Jade s'enfuit de l'autre l'autre côté, mais le monstre la poursuivait.</p>
+            <p class="ch3_2 animated">Ce monstre se téléportait en la suivant.</p>
+            <div class="black noir_ch2 animated"></div>
+            <div class="brown brun_ch2 animated"></div>
+            <div id="side" class="seek_girl girl_ch2 animated"></div>
+            <img src="./img/img_personnages/monstre_sit.png" id="monster_sitting" class="animated" alt="">
+            <img src="./img/img_personnages/monstre_regarde.png" id="standing_ch2" class="monster_standing side animated" alt="monstre debout">
+            <div class="animated"  id="monster_face"></div>
+            <div class="animated" id="background_purple" class="BG"></div>
         </section>
     <!-- ---------- Fin Chapitre 2 et Chapitre 3 -------------------- -->
     <!-- ---------- Début Chapitre 4 ------------------ -->
@@ -88,12 +92,12 @@
                 </li> 
             </ul>
             <img src="./img/img_arriere_plan/foret_curvy_corrupt.png" id="background_svg" alt="chemin zigzag">
-            <h1 id="T_4">Sans échapatoire</h1>
-            <p class="ch4_1">Les mouvement du monstre devenant de plus en plus erratique.</p>
-            <p class="ch4_2">Les arbres aussi avait changé pour des versions plus défformé.</p>
-            <p class="ch4_3"> Le monstre se rapprochait de plus en plus de Jade...</p>
-            <div class="seek_girl girl_ch4 down img"></div>
-            <img src="./img/img_personnages/monstre_regarde.png" id="standing_ch3" class="monster_standing monster_standing_ch4 down img" alt="monstre debout">
+            <h1 class="animated" id="T_4">Sans échapatoire</h1>
+            <p class="ch4_1 animated">Les mouvement du monstre devenant de plus en plus erratique.</p>
+            <p class="ch4_2 animated">Les arbres aussi avait changé pour des versions plus défformé.</p>
+            <p class="ch4_3 animated"> Le monstre se rapprochait de plus en plus de Jade...</p>
+            <div class="seek_girl auto girl_ch4 down animated"></div>
+            <img src="./img/img_personnages/monstre_regarde.png" id="standing_ch3" class="monster_standing monster_standing_ch4 down animated" alt="monstre debout">
             <svg width="990" height="1079" viewBox="0 0 990 1079" fill="none" xmlns="http://www.w3.org/2000/svg" id="svg_run">
                 <path id="path_run" viewBox="0 0 1920 1080" preserveAspectRatio="xMinYMin slice" 
                 d="M38.2018 1C15.0044 92.8791 -34.6762 190.244 42.6614 276.637C119.999 363.031 278.706 266.352 465.974 270.466C653.243 274.58 871.285 369.202 871.285 369.202C992.647 426.798 895.969 467.938 813.689 492.622C731.409 517.306 494.855 597.528 424.917 626.326C354.979 655.124 317.953 685.979 324.124 727.119C330.295 768.259 381.72 871.109 470.171 904.021C558.621 936.933 645.015 949.275 741.694 980.13C838.373 1010.98 984.419 1033.61 988.533 1078.87" stroke="#222222" stroke-width="2" stroke-linejoin="round"/>
@@ -112,16 +116,16 @@
                     </ul> 
                 </li> 
             </ul>
-            <h1 id="T_5">Fin Abrusque</h1>
-            <p class="ch5_1">Par épuisement, Jade trébucha sur ses pieds.</p>
-            <p class="ch5_2">Le monstre se rapprocha lentement.</p>
-            <p class="ch5_3">Il se pencha et toucha le visage ensanglanté de Jade.</p>
-            <div class="seek_girl girl_ch5 fall img"></div>
-            <img src="./img/img_personnages/jade_fell.png" id="jade_fell" class="img" alt="jade fell">
-            <div id="scared_to_death" class="BG"></div>
-            <img src="./img/img_personnages/monstre_mini.png" class="monster_chase fall monster_last img" alt="scary">
-            <img src="./img/img_elements_visuels/hand.png" alt="hand" id="hand" class="img">
-            <div class="BG white"></div>
+            <h1 class="animated" id="T_5">Fin Abrusque</h1>
+            <p class="ch5_1 animated">Par épuisement, Jade trébucha sur ses pieds.</p>
+            <p class="ch5_2 animated">Le monstre se rapprocha lentement.</p>
+            <p class="ch5_3 animated">Il se pencha et toucha le visage ensanglanté de Jade.</p>
+            <div class="seek_girl girl_ch5 fall animated"></div>
+            <img src="./img/img_personnages/jade_fell.png" id="jade_fell" class="animated" alt="jade fell">
+            <div class="animated" id="scared_to_death" class="BG"></div>
+            <img src="./img/img_personnages/monstre_mini.png" class="monster_chase fall monster_last animated" alt="scary">
+            <img src="./img/img_elements_visuels/hand.png" alt="hand" id="hand" class="animated">
+            <div class="BG white animated"></div>
         </section>
     <!-- ---------- Fin Chapitre 5 -------------------- -->
     <!-- ---------- Début Chapitre 6 ------------------ -->
@@ -136,16 +140,16 @@
                     </ul> 
                 </li> 
             </ul>
-            <h1 id="T_6">Réveil Brutal</h1>
-            <p class="ch6_1">En ouvrant les yeux, le monstre se trouvait au dessus de Jade et bavait du sang sur elle.</p>
-            <p class="ch6_2">En se rapprochant, le monstre se transforma en livre et tomba.</p>
-            <p class="ch6_3">Le monstre n'était qu'un livre qu'elle avait lu avant d'aller dormir...</p>
-            <svg id="bave" class="img" 
+            <h1 class="animated" id="T_6">Réveil Brutal</h1>
+            <p class="ch6_1 animated">En ouvrant les yeux, le monstre se trouvait au dessus de Jade et bavait du sang sur elle.</p>
+            <p class="ch6_2 animated">En se rapprochant, le monstre se transforma en livre et tomba.</p>
+            <p class="ch6_3 animated">Le monstre n'était qu'un livre qu'elle avait lu avant d'aller dormir...</p>
+            <svg id="bave" class="animated" 
 	        viewBox="0 0 595.3 841.9">
             <path id="bave_path" d="M48.4195 0C48.4195 0 55.7195 134.7 41.4195 298C29.0195 439.3 -25.5804 508.8 14.4196 549C37.6196 572.3 84.1195 577.1 108.42 558C148.82 526.2 100.92 450 94.4195 302C87.0195 133.2 93.4195 0 93.4195 0H48.4195Z" fill="black"/>
             <path id="goutte_path" d="M281 800C435.9 800 562 674 562 519C562 367.3 416 244 407 227C394.1 202.6 281 0 281 0C281 0 171.2 200.6 150.8 232C131.9 260.8 0 367.3 0 519.1C0 674 126.1 800 281 800Z" fill="black"/>
             </svg>
-            <svg id="eye_close" class="img" 
+            <svg id="eye_close" class="animated" 
             xmlns="http://www.w3.org/2000/svg" width="1890" height="1417" viewBox="0 0 1890 1417">
                 <defs>
                   <style>
@@ -166,16 +170,16 @@
                 <path id="Close_3" data-name="Forme 3" class="cls-1" d="M410,742a313.868,313.868,0,0,0,413-15"/>
                 <path id="Close_4" data-name="Forme 4" class="cls-1" d="M1054,744a449.986,449.986,0,0,0,468.03,16.919"/>
             </svg>
-            <img src="./img/img_personnages/monstre_smile.png" id="monstre_smile" class="img" alt="monstre smile">
+            <img src="./img/img_personnages/monstre_smile.png" id="monstre_smile" class="animated" alt="monstre smile">
             <div id="livre">
-                <img src="./img/img_elements_visuels/page_1.png" class="page page_1 img" alt="page">
-                <img src="./img/img_elements_visuels/page_2.png" class="page page_2 img" alt="page">
-                <img src="./img/img_elements_visuels/page_3.png" class="page page_3 img" alt="page">
-                <img src="./img/img_elements_visuels/page_4.png" class="page page_4 img" alt="page">
-                <img src="./img/img_elements_visuels/page_5.png" class="page page_5 img" alt="page">
-                <img src="./img/img_elements_visuels/page_6.png" class="page page_6 img" alt="page">
-                <img src="./img/img_elements_visuels/page_7.png" class="page page_7 img" alt="page">
-                <img src="./img/img_elements_visuels/terreure_blanche.png" id="cover" class="img" alt="livre">
+                <img src="./img/img_elements_visuels/page_1.png" class="page page_1 animated" alt="page">
+                <img src="./img/img_elements_visuels/page_2.png" class="page page_2 animated" alt="page">
+                <img src="./img/img_elements_visuels/page_3.png" class="page page_3 animated" alt="page">
+                <img src="./img/img_elements_visuels/page_4.png" class="page page_4 animated" alt="page">
+                <img src="./img/img_elements_visuels/page_5.png" class="page page_5 animated" alt="page">
+                <img src="./img/img_elements_visuels/page_6.png" class="page page_6 animated" alt="page">
+                <img src="./img/img_elements_visuels/page_7.png" class="page page_7 animated" alt="page">
+                <img src="./img/img_elements_visuels/terreure_blanche.png" id="cover" class="animated" alt="livre">
             </div>
         </section>
     <!-- ---------- Fin Chapitre 6 -------------------- -->

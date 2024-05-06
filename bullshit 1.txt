@@ -194,3 +194,13 @@ jade
 * jade
 * ciel
 
+
+commentaire du prof:
+
+texte augmenter la taille
+
+augmenter la duration du background position du ch1
+
+ecrire le numeros de  chapitre 
+
+responsive

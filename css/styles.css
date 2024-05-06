@@ -1,14 +1,4 @@
 /*--------------------------------------------------------- 
-# test
----------------------------------------------------------*/
-
-#is_spitesheath #cloudy_meadows,
-#is_spitesheath #cloudy_meadows {
-    height: 500px;
-    width: 500px;
-}
-
-/*--------------------------------------------------------- 
 # Polices et Couleurs
 ---------------------------------------------------------*/
 
@@ -76,6 +66,10 @@
     animation-play-state: running;
 }
 
+.auto.seek_girl {
+    animation-play-state: running;
+}
+
 body.is-scrolling  .cloudy_meadows {
     animation-play-state: running;
 }
@@ -121,13 +115,23 @@ section {
 }
 
 footer {
-    text-align: left;
+    position: relative;
+    text-align: center;
+    height: 200px;
+    background-color: var(--Anubis);
+    color: var(--Silver_Chariot);
+    font-family: "hug_me_tight";
+}
+
+footer p {
+    padding: 30px;
 }
 
 h1 {
     position: absolute;
     font-family: "Drunk_N_proud";
     letter-spacing: 5px;
+    font-size: calc(20px + 1vw);;
     text-shadow: 2px 0px var(--Silver_Chariot), -2px 0px var(--Silver_Chariot), 0px 2px var(--Silver_Chariot), 0px -2px var(--Silver_Chariot);
     z-index: 4;
 }
@@ -135,9 +139,11 @@ h1 {
 main p {
     position: absolute;
     letter-spacing: 1px;
+    font-size: calc(15px + 1vw);;
     font-family: "hug_me_tight";
     text-shadow: 1px 0px var(--Silver_Chariot), -1px 0px var(--Silver_Chariot), 0px 1px var(--Silver_Chariot), 0px -1px var(--Silver_Chariot);
     z-index: 4;
+    max-width: 50%;
 }
 
 .black {
@@ -164,6 +170,10 @@ main p {
 
 .img {
     border: red 1px solid;
+}
+
+.animated {
+    border: purple 1px solid;
 }
 
 ul.technique-gsap{
@@ -194,14 +204,17 @@ ul.technique-gsap li{
 header h1 {
     left: 0;
     right: 0;
+    top: 50px;
     padding: 10px;
     text-align: center;
+    font-size: calc(30px + 1vw);
+
 }
 
 #start_credit {
     position: absolute;
     bottom: 10px;
-    left: 0;
+    left: 10px;
     max-width: 850px;
     font-size: 12px;
     letter-spacing: 1px;
@@ -424,6 +437,8 @@ header h1 {
     position: absolute;
     width: 100vw; 
     height: 100vh;
+    object-fit: cover;
+    object-position: 0 0;
 }
 
 /*---------------------------------------------------------- 
