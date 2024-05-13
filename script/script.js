@@ -24,7 +24,6 @@ CHAPITRE 1
 
 gsap.timeline({scrollTrigger: {
     trigger: "#Simple_reve",
-    markers: true,
     start: 'center center',
 }})
 .to(".cloudy_meadows", {y:100, duration:3 ,  ease: "power1.inOut",yoyo:"true", repeat: -1})
@@ -36,7 +35,6 @@ gsap.timeline({scrollTrigger: {
     pin: true,
     trigger: "#Simple_reve",
     scrub: true,
-    markers: true,
     start: 'center center',
     end: `+=${window.innerHeight * 2} top`,
 }})
@@ -64,7 +62,6 @@ gsap.timeline({scrollTrigger: {
     pin: true,
     trigger: "#La_figure",
     scrub: true,
-    markers: true,
     start: 'center center',
     end: '+=5000 top',
 }})
@@ -110,7 +107,6 @@ CHAPITRE 4
 gsap.timeline({scrollTrigger: {
     pin: true,
     trigger: "#Sans_echapatoire",
-    markers: true,
     start: 'center center',
     end: 'bottom top',
     toggleActions: 'restart complete reverse reset'
@@ -119,24 +115,12 @@ gsap.timeline({scrollTrigger: {
 .fromTo(".ch4_1", {text: "",top:"45vh", left: "5vw"}, {text: "Les mouvement du monstre devenait de plus en plus erratique.", duration: 10, ease: "none"}, 5)
 .fromTo(".ch4_2", {text: "",top:"55vh", right: "5vw"}, {text: "Les arbres aussi avait changé pour des versions plus défformé.", duration: 10, ease: "none"}, 15)
 .fromTo(".ch4_3", {text: "",top:"65vh", right: "5vw"}, {text: "Le monstre se rapprochait de plus en plus de Jade...", duration: 10, ease: "none"}, 25)
-.to(".girl_ch4" , {motionPath: {
-    path: '#path_run', align: '#path_run' ,alignOrigin: [0.5, 1], start: 0,
-    end: 0.05},  duration: 5, ease: "none"}, 0)
-
-.to(".girl_ch4" , {motionPath: {
-    path: '#path_run', align: '#path_run' ,alignOrigin: [0.5, 0.9],start: 0.05,
-    end: 1},  duration: 30, ease: "none",}, 5)
-
+.to(".girl_ch4" , {motionPath: {path: '#path_run', align: '#path_run' ,alignOrigin: [0.5, 1], start: 0, end: 0.05},  duration: 5, ease: "none"}, 0)
+.to(".girl_ch4" , {motionPath: {path: '#path_run', align: '#path_run' ,alignOrigin: [0.5, 0.9],start: 0.05, end: 1},  duration: 30, ease: "none",}, 5)
 .to(".girl_ch4" , {y: "+=60vh", x: "+=300px", ease: "none",duration: 3}, 35)
-
 .to(".monster_standing_ch4" , {motionPath: {
-path: '#path_run', align: '#path_run' ,alignOrigin: [0.5, 1], start: 0,
-end: 0.05},  duration: 5, ease: "steps(3)"}, 5)
-
-.to(".monster_standing_ch4" , {motionPath: {
-    path: '#path_run', align: '#path_run' ,alignOrigin: [0.5, 0.9],start: 0.05,
-    end: 1},  duration: 30, ease: "steps(15)",}, 10)
-
+path: '#path_run', align: '#path_run' ,alignOrigin: [0.5, 1], start: 0, end: 0.05},  duration: 5, ease: "steps(3)"}, 5)
+.to(".monster_standing_ch4" , {motionPath: {path: '#path_run', align: '#path_run' ,alignOrigin: [0.5, 0.9], start: 0.05, end: 1},  duration: 30, ease: "steps(15)",}, 10)
 .to(".monster_standing_ch4" , {y: "+=60vh", x: "+=300px", ease: "steps(3)",duration: 3}, 40)
 
 /*
@@ -147,7 +131,6 @@ gsap.timeline({scrollTrigger: {
     pin: true,
     trigger: "#Fin_abrusque",
     scrub: true,
-    markers: true,
     start: 'center center',
     end: '+=5000 top',
 }})
@@ -194,7 +177,6 @@ gsap.timeline({scrollTrigger: {
     pin: true,
     trigger: "#Reveil_brutal",
     scrub: true,
-    markers: true,
     start: 'center center',
     end: '+=5000 top',
     toggleActions: 'restart complete none none'
