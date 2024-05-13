@@ -5,16 +5,16 @@
 [Page Speed Insight - ]()
 
 ## Problème #1
-### image
+### Les images ne sont pas au bon format et son donc trop volumineuse
 ###
 ### Résultat: 
 
 ## Problème #1
-### lazyloading
+### La page web charge toute les images au démarage
 ###
 ### Résultat: 
 
 ## Problème #1
-### javascript
+### Le fichier javascript n' contient d'espace inutilisé
 ###
 ### Résultat: 
