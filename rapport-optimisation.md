@@ -19,4 +19,6 @@
 ### Le fichier javascript a été optimisé sur une seule ligne et sans espace.
 ### Résultat: Le fichier javascript charge beaucoup plus rapidement.
 
+Site utilisé : https://mj.olnir.com/tools/minifier/
+
 # A cause de problème qui ne viennent pas de moi, je n'ai pas eu le tempsde mieux optimiser le site
