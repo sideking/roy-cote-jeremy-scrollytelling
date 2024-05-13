@@ -100,7 +100,7 @@ header {
     position: relative;
     width: 100vw;
     height: 100vh;
-    background-image: url(../img/img_arriere_plan/arrière_plan_lune.png);
+    background-image: url(../img/img_arriere_plan/arrière_plan_lune.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top right;
@@ -152,7 +152,7 @@ main p {
     height: 500px;
     background-size: 3250px 500px;
     max-height: 500px;
-    background-image: url(../img/img_arriere_plan/arbre_noir_loop.png);
+    background-image: url(../img/img_arriere_plan/arbre_noir_loop.webp);
     background-repeat: no-repeat;
 }
 
@@ -160,7 +160,7 @@ main p {
     width: 100%;
     height: 500px;
     background-size: 3766px 500px;
-    background-image: url(../img/img_arriere_plan/arbre_brun_loop.png);
+    background-image: url(../img/img_arriere_plan/arbre_brun_loop.webp);
     background-repeat: repeat-x;
 }
 
@@ -184,7 +184,7 @@ ul.technique-gsap{
     font-family: monospace;
     font-weight: 400;
     width: auto;
-    display: inline-block;
+    display: none;
     padding: 10px 20px 12px 20px;
     margin: 0;
     max-width: 300px;
@@ -242,7 +242,7 @@ header h1 {
     width: 100%;
     height: 100%;
     background-size: 3840px 100vh;
-    background-image: url(../img/img_arriere_plan/arbres_noir_loop.png);
+    background-image: url(../img/img_arriere_plan/arbres_noir_loop.webp);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -253,7 +253,7 @@ header h1 {
     width: 100%;
     height: 100%;
     background-size: 3840px 100vh;
-    background-image: url(../img/img_arriere_plan/arbres_mauve_loop.png);
+    background-image: url(../img/img_arriere_plan/arbres_mauve_loop.webp);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -266,7 +266,7 @@ header h1 {
     width: 100%;
     height: 100%;
     background-size: 3840px 100vh;
-    background-image: url(../img/img_arriere_plan/arbres_brun_loop.png);
+    background-image: url(../img/img_arriere_plan/arbres_brun_loop.webp);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -279,7 +279,7 @@ header h1 {
     width: 100%;
     height: 100%;
     background-size: 3840px 100vh;
-    background-image: url(../img/img_arriere_plan/arbres_rouge_loop.png);
+    background-image: url(../img/img_arriere_plan/arbres_rouge_loop.webp);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -289,7 +289,7 @@ header h1 {
 ----------------------------------------------------------*/ 
 
 #Simple_reve {
-    background-image: url(../img/img_arriere_plan/maison_start.png);
+    background-image: url(../img/img_arriere_plan/maison_start.webp);
     background-position: top right;
     overflow: hidden;
 }
@@ -332,13 +332,12 @@ header h1 {
     height: 20%;
 }
 
-
 /*---------------------------------------------------------- 
 # Chapitre 2 et Chapitre 3
 ----------------------------------------------------------*/ 
 
 #La_figure {
-    background-image: url(../img/img_arriere_plan/foret_drette.png);
+    background-image: url(../img/img_arriere_plan/foret_drette.webp);
     background-position: center;
     overflow: hidden;
 }
@@ -380,9 +379,6 @@ header h1 {
     max-width: 400px;
 }
 
-
-
-
 .monster_standing.side {
     position: absolute;
     top: 0%;
@@ -399,7 +395,7 @@ header h1 {
     bottom: 0;
     width: 100%;
     height: 100%;
-    background-image: url(../img/img_personnages/monstre_visage.png);
+    background-image: url(../img/img_personnages/monstre_visage.webp);
     background-size: 100% 100%;
     background-repeat: no-repeat;
     opacity: 0;
@@ -410,7 +406,7 @@ header h1 {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-image: url(../img/img_arriere_plan/BG_mauve.png);
+    background-image: url(../img/img_arriere_plan/BG_mauve.webp);
     opacity: 0;
     z-index: 0;
 }
@@ -491,7 +487,7 @@ header h1 {
 ----------------------------------------------------------*/ 
 
 #Fin_abrusque {
-    background-image: url(../img/img_arriere_plan/foret_parallele.png);
+    background-image: url(../img/img_arriere_plan/foret_parallele.webp);
     background-position: center top;
     overflow: hidden;
 }
@@ -529,7 +525,7 @@ header h1 {
     bottom: 0;
     width: 100%;
     height: 100%;
-    background-image: url(../img/img_personnages/jade_scared_to_death.png);
+    background-image: url(../img/img_personnages/jade_scared_to_death.webp);
     background-position: center center;
     background-repeat: no-repeat;
     opacity: 0;
@@ -549,7 +545,7 @@ header h1 {
 .white {
     position: absolute;
     top: 0;
-    background-image: url(../img/img_arriere_plan/BG_blanc.png);
+    background-image: url(../img/img_arriere_plan/BG_blanc.webp);
     width: 100vw;
     height: 100vh;
     opacity: 0;
@@ -561,7 +557,7 @@ header h1 {
 ----------------------------------------------------------*/ 
 
 #Reveil_brutal {
-    background-image: url(../img/img_arriere_plan/BG_blanc.png);
+    background-image: url(../img/img_arriere_plan/BG_blanc.webp);
     background-position: center;
     overflow: hidden;
 }

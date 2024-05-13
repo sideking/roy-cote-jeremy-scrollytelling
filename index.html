@@ -8,8 +8,13 @@
     <link rel="shortcut icon" href="./img/you_favicon_small.png" type="image/x-icon">
 </head>
 <body>
-    <!-- ---------- Début Écran d'introduction -------- -->
+    <!--  Début Écran d'introduction  -->
     <header>
+        <ul class="technique-gsap"> 
+            <li>Timeline</li> 
+            <li>Déplacement</li>
+            <li>Parallaxe</li>
+        </ul>
         <div class="animated" id="arbres_noir"></div>
         <div class="animated" id="arbres_mauve"></div>
         <div class="animated" id="arbres_brun"></div>
@@ -20,24 +25,36 @@
             © 2024 -  Conception : Jérémy Roy-Côté et Keven Malric | Développement Web : Jérémy Roy-Côté.
         </p>
         <div id="call_to_action">
-            <img src="./img/img_elements_visuels/fleche.png" alt="">
+            <img src="./img/img_elements_visuels/fleche.webp" alt="" loading="lazy">
             <p>Défiler</p>
         </div>
         
     </header>
-    <!-- ---------- Fin Écran d'introduction ---------- -->
+    <!--  Fin Écran d'introduction  -->
     <main>
-    <!-- ---------- Début Chapitre 1 ------------------ -->
+    <!--  Début Chapitre 1  -->
         <section id="Simple_reve" class="BG">
             <ul class="technique-gsap"> 
-                <li>...</li> 
-                <li>...</li> 
-                <li>scrollTrigger 
+                <li>Timeline</li> 
+                <li>Rotation</li>
+                <li>Déplacement</li>
+                <li>Scrub</li>
+                <li>Repeat</li>
+                <li>Text</li>
+                <li>Parallaxe</li>
+                <li>scrollTrigger 1
                     <ul> 
-                        <li>trigger=</li> 
+                        <li>trigger="#Simple_reve"</li> 
                         <li>...</li> 
-                    </ul> 
+                    </ul>
                 </li> 
+                <li>scrollTrigger 2
+                    <ul> 
+                        <li>trigger="#Simple_reve"</li> 
+                        <li>Pin</li>
+                        <li>Scrub</li>
+                    </ul>
+                </li>
             </ul>
             <h1 class="animated" id="T_1">Chapitre 1: Un Simple Rêve</h1>
             <p class="ch1_1 animated">Une petite fille nommée Jade s'endort lors d'une nuit paisible.</p>
@@ -50,18 +67,26 @@
             <div class="black noir_ch1 animated"></div>
             <div class="brown brun_ch1 animated"></div>
         </section>
-    <!-- ---------- Fin Chapitre 1 -------------------- -->
-    <!-- ---------- Début Chapitre 2 et Chapitre 3 ------------------ -->
+    <!--  Fin Chapitre 1  -->
+    <!--  Début Chapitre 2 et Chapitre 3  -->
         <section id="La_figure" class="BG">
             <ul class="technique-gsap"> 
-                <li>...</li> 
-                <li>...</li> 
+                <li>Timeline</li> 
+                <li>Rotation</li>
+                <li>Déplacement</li>
+                <li>Scrub</li>
+                <li>Text</li>
+                <li>Opacité</li>
+                <li>Parallaxe</li>
+                <li>BackgroundPosition</li>
+                <li>Left, Right</li>
                 <li>scrollTrigger 
                     <ul> 
-                        <li>trigger=</li> 
-                        <li>...</li> 
-                    </ul> 
-                </li> 
+                        <li>trigger="#La_figure"</li> 
+                        <li>Pin</li>
+                        <li>Scrub</li>
+                    </ul>
+                </li>
             </ul>
             <h1 class="animated" id="T_2">La Figure</h1>
             <h1 class="animated" id="T_3">Un Danger Mortel</h1>
@@ -73,72 +98,90 @@
             <div class="black noir_ch2 animated"></div>
             <div class="brown brun_ch2 animated"></div>
             <div id="side" class="seek_girl girl_ch2 animated"></div>
-            <img src="./img/img_personnages/monstre_sit.png" id="monster_sitting" class="animated" alt="">
-            <img src="./img/img_personnages/monstre_regarde.png" id="standing_ch2" class="monster_standing side animated" alt="monstre debout">
+            <img src="./img/img_personnages/monstre_sit.webp" id="monster_sitting" class="animated" alt="" loading="lazy">
+            <img src="./img/img_personnages/monstre_regarde.webp" id="standing_ch2" class="monster_standing side animated" alt="monstre debout" loading="lazy">
             <div class="animated"  id="monster_face"></div>
             <div class="animated" id="background_purple" class="BG"></div>
         </section>
-    <!-- ---------- Fin Chapitre 2 et Chapitre 3 -------------------- -->
-    <!-- ---------- Début Chapitre 4 ------------------ -->
+    <!--  Fin Chapitre 2 et Chapitre 3  -->
+    <!--  Début Chapitre 4  -->
         <section id="Sans_echapatoire" class="BG">
             <ul class="technique-gsap"> 
-                <li>...</li> 
-                <li>...</li> 
+                <li>Timeline</li> 
+                <li>Déplacement</li>
+                <li>Text</li>
+                <li>alignOrigin</li>
+                <li>align</li>
+                <li>path</li>
+                <li>Left, Right</li>
                 <li>scrollTrigger 
                     <ul> 
-                        <li>trigger=</li> 
-                        <li>...</li> 
-                    </ul> 
-                </li> 
+                        <li>trigger="#Sans_echapatoire"</li> 
+                        <li>Pin</li>
+                        <li>toggleActions: 'restart complete reverse reset'</li>
+                    </ul>
+                </li>
             </ul>
-            <img src="./img/img_arriere_plan/foret_curvy_corrupt.png" id="background_svg" alt="chemin zigzag">
+            <img src="./img/img_arriere_plan/foret_curvy_corrupt.webp" id="background_svg" alt="chemin zigzag" loading="lazy">
             <h1 class="animated" id="T_4">Sans échapatoire</h1>
             <p class="ch4_1 animated">Les mouvement du monstre devenant de plus en plus erratique.</p>
             <p class="ch4_2 animated">Les arbres aussi avait changé pour des versions plus défformé.</p>
             <p class="ch4_3 animated"> Le monstre se rapprochait de plus en plus de Jade...</p>
             <div class="seek_girl auto girl_ch4 down animated"></div>
-            <img src="./img/img_personnages/monstre_regarde.png" id="standing_ch3" class="monster_standing monster_standing_ch4 down animated" alt="monstre debout">
+            <img src="./img/img_personnages/monstre_regarde.webp" id="standing_ch3" class="monster_standing monster_standing_ch4 down animated" alt="monstre debout" loading="lazy">
             <svg width="1920" height="1080"  viewBox="0 0 1920 1080" preserveAspectRatio="xMinYMin slice" fill="none" id="svg_run">
                 <path id="path_run"  
                 d="M38.2018 1C15.0044 92.8791 -34.6762 190.244 42.6614 276.637C119.999 363.031 278.706 266.352 465.974 270.466C653.243 274.58 871.285 369.202 871.285 369.202C992.647 426.798 895.969 467.938 813.689 492.622C731.409 517.306 494.855 597.528 424.917 626.326C354.979 655.124 317.953 685.979 324.124 727.119C330.295 768.259 381.72 871.109 470.171 904.021C558.621 936.933 645.015 949.275 741.694 980.13C838.373 1010.98 984.419 1033.61 988.533 1078.87" stroke="#222222" stroke-width="2" stroke-linejoin="round"/>
             </svg>
         </section>
-    <!-- ---------- Fin Chapitre 4 -------------------- -->
-    <!-- ---------- Début Chapitre 5 ------------------ -->
+    <!--  Fin Chapitre 4  -->
+    <!--  Début Chapitre 5  -->
         <section id="Fin_abrusque" class="BG">
             <ul class="technique-gsap"> 
-                <li>...</li> 
-                <li>...</li> 
+                <li>Timeline</li> 
+                <li>Déplacement</li>
+                <li>Text</li>
+                <li>Scrub</li>
+                <li>Opacité</li>
+                <li>Left, Right</li>
                 <li>scrollTrigger 
                     <ul> 
-                        <li>trigger= #Fin_abrusque</li> 
-                        <li>...</li> 
-                    </ul> 
-                </li> 
+                        <li>trigger="#Fin_abrusque"</li> 
+                        <li>Pin</li>
+                        <li>Scrub</li>
+                    </ul>
+                </li>
             </ul>
             <h1 class="animated" id="T_5">Fin Abrusque</h1>
             <p class="ch5_1 animated">Par épuisement, Jade trébucha sur ses pieds.</p>
             <p class="ch5_2 animated">Le monstre se rapprocha lentement.</p>
             <p class="ch5_3 animated">Il se pencha et toucha le visage ensanglanté de Jade.</p>
             <div class="seek_girl girl_ch5 fall animated"></div>
-            <img src="./img/img_personnages/jade_fell.png" id="jade_fell" class="animated" alt="jade fell">
+            <img src="./img/img_personnages/jade_fell.webp" id="jade_fell" class="animated" alt="jade fell" loading="lazy">
             <div id="scared_to_death" class="BG"></div>
-            <img src="./img/img_personnages/monstre_mini.png" class="monster_chase fall monster_last animated" alt="scary">
-            <img src="./img/img_elements_visuels/hand.png" alt="hand" id="hand" class="animated">
+            <img src="./img/img_personnages/monstre_mini.webp" class="monster_chase fall monster_last animated" alt="scary" loading="lazy">
+            <img src="./img/img_elements_visuels/hand.webp" alt="hand" id="hand" class="animated" loading="lazy">
             <div class="BG white animated"></div>
         </section>
-    <!-- ---------- Fin Chapitre 5 -------------------- -->
-    <!-- ---------- Début Chapitre 6 ------------------ -->
+    <!--  Fin Chapitre 5  -->
+    <!--  Début Chapitre 6  -->
         <section id="Reveil_brutal" class="BG">
             <ul class="technique-gsap"> 
-                <li>...</li> 
-                <li>...</li> 
+                <li>Timeline</li> 
+                <li>Déplacement</li>
+                <li>Text</li>
+                <li>Scrub</li>
+                <li>Opacité</li>
+                <li>DrawSVG</li>
+                <li>MorphSVG</li>
+                <li>Left, Right</li>
                 <li>scrollTrigger 
                     <ul> 
-                        <li>trigger=</li> 
-                        <li>...</li> 
-                    </ul> 
-                </li> 
+                        <li>trigger="#Reveil_brutal"</li> 
+                        <li>Pin</li>
+                        <li>Scrub</li>
+                    </ul>
+                </li>
             </ul>
             <h1 class="animated" id="T_6">Réveil Brutal</h1>
             <p class="ch6_1 animated">En ouvrant les yeux, le monstre se trouvait au dessus de Jade et bavait du sang sur elle.</p>
@@ -166,20 +209,20 @@
                 <path id="Close_3" data-name="Forme 3" class="cls-1" d="M410,742a313.868,313.868,0,0,0,413-15"/>
                 <path id="Close_4" data-name="Forme 4" class="cls-1" d="M1054,744a449.986,449.986,0,0,0,468.03,16.919"/>
                 </svg>
-                <img src="./img/img_personnages/monstre_visage.png"  class="animated monstre_smile gauche" alt="monstre smile">
-                <img src="./img/img_personnages/monstre_visage.png"  class="animated monstre_smile droite" alt="monstre smile">
+                <img src="./img/img_personnages/monstre_visage.webp"  class="animated monstre_smile gauche" alt="monstre smile" loading="lazy">
+                <img src="./img/img_personnages/monstre_visage.webp"  class="animated monstre_smile droite" alt="monstre smile" loading="lazy">
             <div id="livre">
-                <img src="./img/img_elements_visuels/page_1.png" class="page page_1 animated" alt="page">
-                <img src="./img/img_elements_visuels/page_2.png" class="page page_2 animated" alt="page">
-                <img src="./img/img_elements_visuels/page_3.png" class="page page_3 animated" alt="page">
-                <img src="./img/img_elements_visuels/page_4.png" class="page page_4 animated" alt="page">
-                <img src="./img/img_elements_visuels/page_5.png" class="page page_5 animated" alt="page">
-                <img src="./img/img_elements_visuels/page_6.png" class="page page_6 animated" alt="page">
-                <img src="./img/img_elements_visuels/page_7.png" class="page page_7 animated" alt="page">
-                <img src="./img/img_elements_visuels/terreure_blanche.png" id="cover" class="animated" alt="livre">
+                <img src="./img/img_elements_visuels/page_1.webp" class="page page_1 animated" alt="page" loading="lazy">
+                <img src="./img/img_elements_visuels/page_2.webp" class="page page_2 animated" alt="page" loading="lazy">
+                <img src="./img/img_elements_visuels/page_3.webp" class="page page_3 animated" alt="page" loading="lazy">
+                <img src="./img/img_elements_visuels/page_4.webp" class="page page_4 animated" alt="page" loading="lazy">
+                <img src="./img/img_elements_visuels/page_5.webp" class="page page_5 animated" alt="page" loading="lazy">
+                <img src="./img/img_elements_visuels/page_6.webp" class="page page_6 animated" alt="page" loading="lazy">
+                <img src="./img/img_elements_visuels/page_7.webp" class="page page_7 animated" alt="page" loading="lazy">
+                <img src="./img/img_elements_visuels/terreure_blanche.webp" id="cover" class="animated" alt="livre" loading="lazy">
             </div>
         </section>
-    <!-- ---------- Fin Chapitre 6 -------------------- -->
+    <!-- Fin Chapitre 6 -->
     </main>
     <footer>
         <p>Projet scrollytelling créé dans le cadre du cours Optimisation Web - Intégration multimédia - Collège Montmorency. <br>

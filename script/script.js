@@ -39,20 +39,19 @@ gsap.timeline({scrollTrigger: {
     markers: true,
     start: 'center center',
     end: `+=${window.innerHeight * 2} top`,
-    toggleActions: 'restart complete reverse reverse'
 }})
 .fromTo("#T_1", {text: "",y:"40vh", left: 0, right: 0, }, {text: "Chapitre 1 Un Simple Rêve", duration: 10})
-.to("#Simple_reve", {backgroundPosition: "0% 100%", duration:70, ease: "power1.inOut" }, "<")
+.to("#Simple_reve", {backgroundPosition: "0% 100%", duration:130, ease: "power1.inOut" }, "<")
 .to("#T_1", {y: -500, duration: 30,  ease: "power1.inOut"}, 10)
 .to(".cloud_holder", {y: -500, duration: 5,  ease: "power1.inOut"}, "<")
 .fromTo(".ch1_1", {text: "",y:"60vh", right: "10vw"}, {text: "Une petite fille nommée Jade s'endort lors d'une nuit paisible.", duration: 20}, 25)
-.to(".ch1_1", {y: -500, duration: 15,  ease: "power1.inOut"}, 35)
-.fromTo(".ch1_2", {text: "",y:"60vh", left: "10vw"}, {text: "Son sommeil l'emporta vers un monde magique.", duration: 20}, 40)
-.to(".ch1_2", {y: -500, duration: 15,  ease: "power1.inOut"}, 50)
-.fromTo(".ch1_3", {text: "",y:"60vh", right: "20vw"}, {text: "Une forêt enchanté dans lequel elle pourra jouer toute la nuit.", duration: 20},55)
-.to(".ch1_3", {y: -500, duration: 15,  ease: "power1.inOut"}, 65)
-.fromTo(".noir_ch1", {y: 500, backgroundPosition:"50% 0" }, {y: 50, duration:10}, 70)
-.fromTo(".brun_ch1", {y: 1000, backgroundPosition:"40% 0", scale: 1.5}, {y: 30, duration:10}, 70)
+.to(".ch1_1", {y: -500, duration: 15,  ease: "power1.inOut"}, 55)
+.fromTo(".ch1_2", {text: "",y:"60vh", left: "10vw"}, {text: "Son sommeil l'emporta vers un monde magique.", duration: 20}, 60)
+.to(".ch1_2", {y: -500, duration: 15,  ease: "power1.inOut"}, 90)
+.fromTo(".ch1_3", {text: "",y:"60vh", right: "20vw"}, {text: "Une forêt enchanté dans lequel elle pourra jouer toute la nuit.", duration: 20},95)
+.to(".ch1_3", {y: -500, duration: 15,  ease: "power1.inOut"}, 125)
+.fromTo(".noir_ch1", {y: 500, backgroundPosition:"50% 0" }, {y: 50, duration:10}, 130)
+.fromTo(".brun_ch1", {y: 1000, backgroundPosition:"40% 0", scale: 1.5}, {y: 30, duration:10}, 130)
 
 
 /*
@@ -68,14 +67,13 @@ gsap.timeline({scrollTrigger: {
     markers: true,
     start: 'center center',
     end: '+=5000 top',
-    toggleActions: 'restart complete none none'
 }})
 .fromTo("#T_2", {text: "",y:"60vh", left: 0, right: 0}, {text: "Chapitre 2 La Figure", duration: 15, ease: "none"}, 0)
 .fromTo("#La_figure", {backgroundPosition: "0% 0"}, {backgroundPosition: "100% 0", ease: "none", duration: 80}, 15)
-.to("#T_2", {left: "-200vw", duration: 10,  ease: "power1.inOut"}, 15)
+.to("#T_2", {left: "-200vw", duration: 10,  ease: "power1.inOut"}, 20)
 .fromTo(".noir_ch2", {backgroundPosition: "10% 0", y: -100}, {backgroundPosition: "90% 0", ease: "none", duration: 80}, 15)
 .fromTo(".brun_ch2", {backgroundPosition: "0% 0", y: 100}, {backgroundPosition: "100% 0", ease: "none", duration: 80}, 15)
-.fromTo(".ch2_1", {text: "",y:"60vh", left: "10vw"}, {text: "Elle se promenait en forêt suivant un sentier de terre, les arbres avait l'air glisser dans le sol.", duration: 25, ease: "none"},20)
+.fromTo(".ch2_1", {text: "",y:"60vh", left: "10vw"}, {text: "Elle se promenait en forêt suivant un sentier de terre, les arbres avait l'air glisser dans le sol.", duration: 25, ease: "none"},25)
 .fromTo(".girl_ch2", {x: -500}, {x: "20vw", ease: "none", duration: 75}, 20)
 .fromTo("#monster_sitting", {x: 500}, {x: 0, duration: 55, ease: "none"},40)
 .fromTo(".ch2_2", {text: "",y:"70vh", left: "20vw"}, {text: "Une forme noire se trouvais au bout du sentier. Assise et recroquevillée sur elle même.", duration: 15}, 80)
@@ -152,14 +150,13 @@ gsap.timeline({scrollTrigger: {
     markers: true,
     start: 'center center',
     end: '+=5000 top',
-    toggleActions: 'restart complete none none'
 }})
 .fromTo("#T_5", {text: "",y:"0vh", left: 0, right: 0,scale:0}, {y:"50vh",text: "Chapitre 5 Sans échapatoire", duration: 2,scale:1, ease:"none"})
 .fromTo(".girl_ch5", {scale:0}, {scale:1, duration:5, ease:"none"})
 .to("#T_5", {y:"100vh", duration: 3})
 .to(".girl_ch5", {y: "20vh", duration:5, ease:"none"}, "<")
 .to(".girl_ch5", {opacity:0, duration:0.1, ease:"none"})
-.fromTo("#jade_fell", {y: "20vh", opacity:0, rotationZ:180}, {opacity:1, duration:0.1, y: "50vh", ease:"none", duration: 1},"<")
+.fromTo("#jade_fell", {y: "20vh", opacity:0, rotationZ:180}, {opacity:1, y: "50vh", ease:"none", duration: 1},"<")
 .to("#jade_fell", {duration:3})
 .fromTo(".ch5_1", {text: "",bottom:"55vh", left: "5vw"}, {text: "Par épuisement, Jade trébucha sur ses pieds.", duration: 2}, "<")
 .to(".monster_last", {duration:1, opacity:1})
@@ -213,10 +210,10 @@ gsap.timeline({scrollTrigger: {
 .to("#Eye_4", {morphSVG: "#Close_4", duration:5, ease:"power1.inOut"}, 50)
 .to("#Eye_3", {morphSVG: "#Close_3", duration:5, ease:"power1.inOut"}, 50)
 .fromTo(".ch6_1", {text: "",y:"60vh", left: "30vw"}, {text: "En ouvrant les yeux, le monstre se trouvait au dessus de Jade. Il la regardait avec un sourire moqueur.", duration: 40, ease: "none"}, 40)
-.fromTo(".monstre_smile.gauche", {left: "-25vw",scaleY: 0,scaleX: 0.1, opacity:0}, {opacity: 1, duration: 5, scaleY:0.1, scaleY: 0.1,ease:"power1.inOut"}, 50)
-.fromTo(".monstre_smile.droite", {left: "25vw",scaleY: 0,scaleX: 0.1, opacity:0}, {opacity: 1, duration: 5, scaleY:0.1, scaleY: 0.1,ease:"power1.inOut"}, 50)
+.fromTo(".monstre_smile.gauche", {left: "-25vw",scaleY: 0,scaleX: 0.1, opacity:0}, {opacity: 1, duration: 5, scaleY:0.1, scaleX: 0.1,ease:"power1.inOut"}, 50)
+.fromTo(".monstre_smile.droite", {left: "25vw",scaleY: 0,scaleX: 0.1, opacity:0}, {opacity: 1, duration: 5, scaleY:0.1, scaleX: 0.1,ease:"power1.inOut"}, 50)
 .to(".ch6_1", {opacity: 0, duration: 15}, 90)
-.to("#eye_close", {scale: 20, duration: 10, duration: 200,ease:"power1.inOut"}, 75)
+.to("#eye_close", {scale: 20, duration: 200,ease:"power1.inOut"}, 75)
 .fromTo(".ch6_2", {text: "",bottom:"5vh", left: "30vw"}, {text: "En se rapprochant, le monstre se transforma en livre et tomba.", duration: 30, ease: "none"}, 150)
 .to(".monstre_smile", { scaleX: 0.5,scaleY:0.5, duration: 100, left: 0}, 75)
 .to("#eye_close", {opacity: 0, duration: 50}, 200)
